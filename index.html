@@ -12,22 +12,22 @@
         <div class="navbar">
             <img  class="logo" src="./img/logo (1).png">
             <nav> 
-                <ul>
-                    <li>
+                <ul id="menu-list">
+                    <li class="nav-li">
                         <a class="nav-link"> Console </a>
-                    </li>
-                    <li>
+                    </li >
+                    <li class="nav-li">
                         <a class="nav-link"> Acessórios </a>
-                    </li>
-                    <li>
+                    </li >
+                    <li class="nav-li">
                         <a class="nav-link"> Controles </a>
-                    </li>
-                    <li>
+                    </li >
+                    <li class="nav-li">
                         <a class="nav-link"> Outros </a>
-                    </li>
-                    
+                    </li >
                 </ul>
             </nav>
+            <img src="./img/menu.png" class="menu-icon" onclick="showmenu()" >
         </div>
 
 
@@ -60,4 +60,19 @@
         
             </div>
 </body>
+
+<script>
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxheight = "0px"
+
+    function showmenu() {
+        if(menuList.style.maxHeight === "0px"){ 
+            menuList.style.maxHeight = "120px"
+    }else {
+        menuList.style.maxHeight = "0px"
+    }
+ }
+ 
+</script>
+
 </html>
