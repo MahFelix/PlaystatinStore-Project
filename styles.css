@@ -196,43 +196,14 @@ h4 {
 
 @media (max-width: 700px ) {
 
-    .container {
-        width: 90vw;
-        height: 90vh;
+.container {
+        width: 95vw;
+        height: 95vh;
         color: white;
         border-radius: 0;
-        overflow: auto;
-
-        
+        overflow: auto;       
     }
 
-    
-    body {
-            background: linear-gradient(237deg, #00dbff, #f516ed, #dcf516);
-            background-size: 600% 600%;
-        
-            -webkit-animation: AnimationName 8s ease infinite;
-            -moz-animation: AnimationName 8s ease infinite;
-            animation: AnimationName 8s ease infinite;
-        }
-        
-        @-webkit-keyframes AnimationName {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-        @-moz-keyframes AnimationName {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-        @keyframes AnimationName {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-    }  
-    
     
 #menu-list {
    position: relative;
@@ -254,21 +225,23 @@ h4 {
 }
 
 
-
-
-
 .color-box {
     transform: translateX(70px);
 }
 
 .row {
     flex-direction: column-reverse;
+    
 }
 
 .column-1 {
-    width: 90%;
+    width: 100%;
 }
 
 .column-2 {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+
 }
