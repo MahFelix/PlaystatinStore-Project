@@ -8,10 +8,8 @@
 }
 
 body {
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, 
-    rgba(151,29,253,1) 42%, 
-    rgba(252,176,69,1) 100%);
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,235,45,1) 100%);
 
     display: flex;
     justify-content: center;
@@ -119,7 +117,7 @@ h4 {
 }
 
 .buy {
-    width: 200px;
+    width: 120px;
     border: none;
     padding: 12px 10px;
     outline: none;
@@ -130,12 +128,17 @@ h4 {
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, 
     rgba(70,252,102,1) 100%);
     z-index: 2;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s 0.2s ease-in-out;
 }
 
 .controller {
-    width: 80%;
+    width: 70%;
     z-index: 2;
+    animation: moveController 2s infinite alternate ease-in-out;
 
 }
 
@@ -194,6 +197,41 @@ h4 {
 }
 
 
+.buy img {
+    width: 40px;
+    display: none;
+}
+
+.buy:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: space-between;
+    width: 150px;
+}
+
+
+.buy:hover img {
+    display: block;
+}
+
+
+@keyframes moveController {
+from {
+    transform: translate(-5%, -5%) rotate(-5deg);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px ) {
 
 .container {
@@ -209,7 +247,7 @@ h4 {
    position: relative;
    top: 60px;
    left: 60px;
-   overflow: hidden;
+   transition: all 1s 0.2s ease-in-out;
    
 }
 
